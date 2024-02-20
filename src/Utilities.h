@@ -19,7 +19,7 @@
 template <class T1, class T2>
 bool doEvery(T1 *start_time, T2 interval)
 {
-  if (millis() > *start_time + interval)
+  if (millis() >= *start_time + interval)
   {
     *start_time = millis();
     return true;
